@@ -34,10 +34,10 @@ setInterval( function setup() {
   connection.query(sqlsss, function (err, tagChangeRandom) {
     console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
     var a = moment().utcOffset("+05:30").format("HH:mm");
-    if(a == "21:03"||a == "04:00"||a == "06:00"||a == "08:00"||a == "10:00"||a == "12:00"||a == "14:00"||a == "16:00"||a == "18:00"||a == "20:00"||a == "22:00"||a == "23:59" ){
+    if(a == "23:18"||a == "04:00"||a == "06:00"||a == "08:00"||a == "10:00"||a == "12:00"||a == "14:00"||a == "16:00"||a == "18:00"||a == "20:00"||a == "22:00"||a == "23:59" ){
       console.log("a");
       instagramLoginFunction();
-    }else if(a == "02:01"||a == "04:01"||a == "06:01"||a == "08:01"||a == "10:01"||a == "12:01"||a == "14:01"||a == "16:01"||a == "18:01"||a == "20:01"||a == "22:01"||a == "23:58" ){
+    }else if(a == "23:19"||a == "04:01"||a == "06:01"||a == "08:01"||a == "10:01"||a == "12:01"||a == "14:01"||a == "16:01"||a == "18:01"||a == "20:01"||a == "22:01"||a == "23:58" ){
       console.log("a");
       instagramLoginFunction();
     }else{
@@ -48,6 +48,12 @@ setInterval( function setup() {
     }
       })
 }, 110000)
+
+function getRandomArbitrary(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+ }
 
 const instagramLoginFunction = async () => {
   const client = new Instagram(
@@ -84,11 +90,12 @@ const instagramLoginFunction = async () => {
         };
       })
       .then(({ latestNumber, offset }) => {
+         var finalTextValue1 = await getRandomArbitrary(1,113129)
         const updatedNumber = latestNumber + (offset + 1);
         var text = fs.readFileSync("./testv.js");
         var finalTextValue = Number(text.toString('utf-8'))
           axios({
-            url: `https://backend.top9deals.com/admin/address/listamznproducts?start=`+finalTextValue+`&length=20`,
+            url: `https://backend.top9deals.com/admin/address/listamznproducts?start=`+finalTextValue1+`&length=20`,
             method: "get",
             headers: {
               "Content-Type": "application/json",
