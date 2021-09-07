@@ -34,10 +34,10 @@ setInterval( function setup() {
   connection.query(sqlsss, function (err, tagChangeRandom) {
     console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
     var a = moment().utcOffset("+05:30").format("HH:mm");
-    if(a == "02:00"||a == "06:00"||a == "10:00"||a == "14:00"||a == "18:00"||a == "22:00"){
+    if(a == "02:07"||a == "06:00"||a == "10:00"||a == "14:00"||a == "18:00"||a == "22:00"){
       console.log("a");
       instagramLoginFunction();
-    }else if(a == "02:01"||a == "06:01"||a == "10:01"||a == "14:01"||a == "18:01"||a == "22:01"){
+    }else if(a == "02:08"||a == "06:01"||a == "10:01"||a == "14:01"||a == "18:01"||a == "22:01"){
       console.log("a");
       instagramLoginFunction();
     }else{
@@ -122,8 +122,7 @@ const instagramLoginFunction = async () => {
               const updatedCaption = ` ${
                 updatedInkyDoodle.product_title
               }\n✨https://top9deals.com/products/${updatedInkyDoodle.desk_cate}/${updatedInkyDoodle.desk_sub_cate}/${updatedInkyDoodle.desk_mini_sub_cate}/${updatedInkyDoodle.id} ✨\n.\n.\n.\n.\n
-//               #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #summerstyles #outfitstyle  #styleinfluencer #trendylook #summerfashion #dailyoutfit #fashionpoint #fashionzone #offerzone #offerpoint #fashionhub #offerhub #amazonoffers #flipkartoffers #lootoffer #offersale
-              #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #style #outfitstyle #styleinfluencer #trendylook #summerfashion #outfitoftheday #fashionpoint #fashionzone #amazondeals #flipkart #lootoffer #offersale #offer #sale #discount #onlineshopping #love #shopping `;
+             #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #style #outfitstyle #styleinfluencer #trendylook #summerfashion #outfitoftheday #fashionpoint #fashionzone #amazondeals #flipkart #lootoffer #offersale #offer #sale #discount #onlineshopping #love #shopping `;
                   Jimp.read(updatedInkyDoodle.desk_img)
                   .then((lenna) => {
                   return lenna
