@@ -122,8 +122,8 @@ const instagramLoginFunction = async () => {
               const updatedCaption = ` ${
                 updatedInkyDoodle.product_title
               }\n✨https://top9deals.com/products/${updatedInkyDoodle.desk_cate}/${updatedInkyDoodle.desk_sub_cate}/${updatedInkyDoodle.desk_mini_sub_cate}/${updatedInkyDoodle.id} ✨\n.\n.\n.\n.\n
-              #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #summerstyles #outfitstyle  #styleinfluencer #trendylook #summerfashion #dailyoutfit #fashionpoint #fashionzone #offerzone #offerpoint #fashionhub #offerhub #amazonoffers #flipkartoffers #lootoffer #offersale`;
-
+//               #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #summerstyles #outfitstyle  #styleinfluencer #trendylook #summerfashion #dailyoutfit #fashionpoint #fashionzone #offerzone #offerpoint #fashionhub #offerhub #amazonoffers #flipkartoffers #lootoffer #offersale
+              #fashion #fashionstyle #fashionlover #instafashion #casualstyle #casualoutfits #casuallook #style #outfitstyle #styleinfluencer #trendylook #summerfashion #outfitoftheday #fashionpoint #fashionzone #amazondeals #flipkart #lootoffer #offersale #offer #sale #discount #onlineshopping #love #shopping `;
                   Jimp.read(updatedInkyDoodle.desk_img)
                   .then((lenna) => {
                   return lenna
