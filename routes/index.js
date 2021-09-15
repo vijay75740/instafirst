@@ -196,8 +196,8 @@ const instagramLoginFunction = async () => {
 
       const emailConfig = {
         imap: {
-          user: `kajallunagariya1990@gmail.com`,
-          password: `S@!E6a6a`,
+          user: `kajallu545@gmail.com`,
+          password: `3e3e3n`,
           host: "imap.gmail.com",
           port: 993,
           tls: true,
