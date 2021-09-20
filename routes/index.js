@@ -116,7 +116,7 @@ const instagramLoginFunction = async () => {
             });
             console.log('updatedInkyDoodle: ', updatedInkyDoodle);
 
-            let  watermark = await Jimp.read('https://top9deals.com/assets/fashion_points_adobespark.png');
+            let  watermark = await Jimp.read('https://backend.top9deals.com/assets/image/fashion_points_adobespark.png');
             watermark = watermark.resize(75,75);
             if (updatedInkyDoodle) {
               const updatedCaption = ` ${
