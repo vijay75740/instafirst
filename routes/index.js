@@ -34,10 +34,10 @@ setInterval( function setup() {
   connection.query(sqlsss, function (err, tagChangeRandom) {
     console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
     var a = moment().utcOffset("+05:30").format("HH:mm");
-    if(a == "00:18"||a == "06:00"||a == "10:00"||a == "14:11"||a == "18:00"||a == "22:00"){
+    if(a == "00:25"||a == "06:00"||a == "10:00"||a == "14:11"||a == "18:00"||a == "22:00"){
       console.log("a");
       instagramLoginFunction();
-    }else if(a == "00:19"||a == "06:01"||a == "10:01"||a == "14:12"||a == "18:01"||a == "22:01"){
+    }else if(a == "00:16"||a == "06:01"||a == "10:01"||a == "14:12"||a == "18:01"||a == "22:01"){
       console.log("a");
       instagramLoginFunction();
     }else{
