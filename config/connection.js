@@ -17,11 +17,11 @@ var mysql  = require('mysql');
 //   };
 
 var db_config = {
-    host     : 'sql6.freesqldatabase.com',
-    user     : 'sql6460966',
-    password : 'PfXIrBFDkD',
-    database:'sql6460966'
-  };
+  host     : 'sql6.freesqldatabase.com',
+  user     : 'sql6465893',
+  password : 'rNDuI2JqSk',
+  database:'sql6465893'
+};
 
 //- Create the connection variable
 var connection = mysql.createConnection(db_config);
