@@ -1,13 +1,17 @@
 var mysql  = require('mysql');
 
+
+
+
+
+
 //- Connection configuration
 // var db_config = {
-//   host     : 'shareddb-c.hosting.stackcp.net',
-//   user:'affiliate_panel_db-36330e4a',
-//   password : 'S@!E6a6a',
-//   database     : 'affiliate_panel_db-36330e4a'
-// };
-
+//     host     : 'sql6.freesqldatabase.com',
+//     user     : 'sql6468934',
+//     password : 'nRA6VJ69MP',
+//     database:'sql6468934'
+//   };
 
 var db_config = {
   host     : 'top9deals.com',
@@ -15,13 +19,6 @@ var db_config = {
   password : 'S@!E6a6a',
   database:'top9ddyk_app_panel'
 };
-
-// var db_config = {
-//   host     : 'sql6.freesqldatabase.com',
-//   user     : 'sql6465893',
-//   password : 'rNDuI2JqSk',
-//   database:'sql6465893'
-// };
 
 //- Create the connection variable
 var connection = mysql.createConnection(db_config);
