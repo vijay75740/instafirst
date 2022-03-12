@@ -32,7 +32,7 @@ require("dotenv").config();
 setInterval( function setup() {
   let sqlsss = "SELECT * FROM post_flags";
   connection.query(sqlsss, function (err, tagChangeRandom) {
-    console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
+//     console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
     var a = moment().utcOffset("+05:30").format("HH:mm");
     if(a == "00:37"||a == "06:00"||a == "10:00"||a == "14:11"||a == "18:00"||a == "22:00"){
       console.log("a");
