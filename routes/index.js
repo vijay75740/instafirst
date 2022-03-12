@@ -6,7 +6,7 @@ const { OperationHelper } = require('apac');
 var nodeTelegramBotApi = require("node-telegram-bot-api");
 let request = require("request");
 var config = require('../config/global');
-var connection = require('../config/connection');
+var connections = require('../config/connection');
 const BitlyClient = require('bitly').BitlyClient;
 // const bitly = new BitlyClient('d10f8d72343ef254f7251780cbdcc0006fda0bb0');
 var tall = require('tall').default;
@@ -31,7 +31,7 @@ require("dotenv").config();
 
 setInterval( function setup() {
   let sqlsss = "SELECT * FROM post_flags";
-  connection.query(sqlsss, function (err, tagChangeRandom) {
+  connections.query(sqlsss, function (err, tagChangeRandom) {
 //     console.log('tagChangeRandom: ', tagChangeRandom[0].tag_switch);
     var a = moment().utcOffset("+05:30").format("HH:mm");
     if(a == "00:37"||a == "06:00"||a == "10:00"||a == "14:11"||a == "18:00"||a == "22:00"){
