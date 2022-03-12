@@ -9,19 +9,19 @@ var mysql  = require('mysql');
 // };
 
 
-// var db_config = {
-//     host     : 'sql6.freesqldatabase.com',
-//     user     : 'sql6453994',
-//     password : 'Wwe5nUz3de',
-//     database:'sql6453994'
-//   };
-
 var db_config = {
-  host     : 'sql6.freesqldatabase.com',
-  user     : 'sql6465893',
-  password : 'rNDuI2JqSk',
-  database:'sql6465893'
+  host     : 'top9deals.com',
+  user     : 'top9ddyk_apadmin',
+  password : 'S@!E6a6a',
+  database:'top9ddyk_app_panel'
 };
+
+// var db_config = {
+//   host     : 'sql6.freesqldatabase.com',
+//   user     : 'sql6465893',
+//   password : 'rNDuI2JqSk',
+//   database:'sql6465893'
+// };
 
 //- Create the connection variable
 var connection = mysql.createConnection(db_config);
